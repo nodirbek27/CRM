@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import arrow from "../../assets/icons/rightArrow.svg?react";
+import exit from "../../assets/icons/exit.svg?react";
 
 const Arrow = styled(arrow)`
   display: flex;
@@ -131,6 +132,8 @@ const ChildWrapper = styled.div`
   overflow: hidden;
 `;
 
+const ExitIcon = styled(exit)``
+
 export {
   Container,
   ChildWrapper,
@@ -143,4 +146,5 @@ export {
   Menu,
   MenuItem,
   Arrow,
+  ExitIcon,
 };

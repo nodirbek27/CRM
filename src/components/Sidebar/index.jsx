@@ -4,6 +4,7 @@ import {
   Body,
   ChildWrapper,
   Container,
+  ExitIcon,
   LogOut,
   Logo,
   Menu,
@@ -39,8 +40,8 @@ export const Sidebar = () => {
     <Container>
       <Side>
         <Logo onClick={onClickLogo}>Webbrain CRM</Logo>
-        <Menu>
         <Profile />
+        <Menu>
           {sidebar.map((parent) => {
             const active = open.includes(parent.id);
             const { icon: Icon } = parent;
@@ -69,7 +70,8 @@ export const Sidebar = () => {
           })}
         </Menu>
 
-        <LogOut onClick={onLogOut}>Chiqish</LogOut>
+        <LogOut onClick={onLogOut}>
+        <ExitIcon />Chiqish</LogOut>
       </Side>
       <Body>
         <Navbar />
